@@ -28,7 +28,7 @@ def proper_brackets(string):
             elif (item == "]" and "[" == storage[-1]) or (item == "}" and "{" == storage[-1]) or (item == ">" and "<" == storage[-1]) or (item == ")" and "(" == storage[-1]):
                 storage.pop()
             else:
-                return "NO {}hey".format(str(position - 1))
+                return "NO {}".format(str(position - 1))
         index += 1
     if len(storage) != 0:
         return "NO {}".format(str(index + 1))
