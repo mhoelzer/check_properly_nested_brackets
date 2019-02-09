@@ -36,7 +36,8 @@ Write a program that checks whether expressions are properly nested. If the expr
 The input is a text-file. Each line contains an expression to be checked followed by and end-of-line marker. No line contains more than 3000 characters. The input ends with a standard end-of-file marker.
 
 ### Input to Use
-```(*a++(*)
+```
+(*a++(*)
 (*a{+}*)
     <************)>
     ()(***)(**)
@@ -47,14 +48,16 @@ The input is a text-file. Each line contains an expression to be checked followe
     ()*
  aaaaaaa
     aaa(aaaa
- *******```
+ *******
+```
 
 
 ### Output
 The output is a textfile. Each line contains the result of the check of the corresponding inputline, that is ‘YES’ (in upper case), if the expression is OK, and (if it is not OK) ‘NO’ followed by a space and the position of the error.
 
 ### Output to Use
-```NO 6
+```
+NO 6
 YES
 NO 17
 YES
@@ -65,7 +68,8 @@ YES
 YES
 YES
 NO 13
-YES```
+YES
+```
 
 # How to Make the Magic Happen:
 1. Enter `python main.py` in the terminal along with whatever text file you want the function to read.
