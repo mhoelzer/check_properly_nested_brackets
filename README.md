@@ -5,13 +5,6 @@
 # Kenzie Academy: Checking for Properly Nested Brackets
 In this assessment, we had to check in different brackets were properly nested, hence the title.
 
-There is some light dependency on knowing how [Functions](https://docs.python.org/2/tutorial/controlflow.html#defining-functions) work in python in terms of argument passing and return values, but you should be able to figure it out as you go. There are a lot of string stuff in here, so knowing strings things is beneficial.
-
-[string1.py](./string1.py) -- Complete the string functions in string1.py based on your knowledge of Python strings, indexing, slicing, and methods. This is the easier stuff.
-
-[string2.py](./string2.py) -- Additional string function completions. This is the less easier stuff.
-
-
 ## Nesting a bunch of Brackets
 In this problem we consider expressions containing brackets that are properly nested. These expressions are obtained by juxtaposition of properly nested expressions in a pair of matching brackets, the left one an opening and the right one a closing bracket.
 
