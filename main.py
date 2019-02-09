@@ -1,3 +1,6 @@
+import sys
+
+
 def proper_brackets(string):
     storage = []
     index = 0
@@ -31,20 +34,24 @@ def proper_brackets(string):
                 return "NO {}".format(str(position - 1))
         index += 1
     if len(storage) != 0:
-        return "NO {}".format(str(index + 1))
+        return "NO {}".format(str(index))
     else:
         return "YES"
 
 
-print(proper_brackets("(*a++(*)"))
-print(proper_brackets("(*a{+}*)"))
-print(proper_brackets("    <************)>"))
-print(proper_brackets("    ()(***)(**)"))
-print(proper_brackets("   ()(***)(*)"))
-print(proper_brackets("({{}{}}[{(){}[]}"))
-print(proper_brackets("   ([))"))
-print(proper_brackets(" ()(**)"))
-print(proper_brackets("    ()*"))
-print(proper_brackets(" aaaaaaa"))
-print(proper_brackets("    aaa(aaaa"))
-print(proper_brackets(" *******"))
+def main(filename):
+    with open(filename, "r") as read_opened_file:
+        with open("output.txt", "w") as output_file:
+            for input_line in read_opened_file:
+                answer = proper_brackets(input_line)
+                output_file.write("{}\n".format(answer))
+    if len(sys.argv) != 2:
+        print("usage: python main.py file-to-read")
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    filename = sys.argv[1]
+    # ^^^ this refers to what your terminal input is
+    # first argument is this file, and 2nd/index 1 is to-read
+    main(filename)
