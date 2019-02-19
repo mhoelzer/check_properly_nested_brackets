@@ -2,6 +2,7 @@
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    //  "program": "${workspaceFolder}/main.py" also works and will auto run that specific file
     "version": "0.2.0",
     "configurations": [
         {
